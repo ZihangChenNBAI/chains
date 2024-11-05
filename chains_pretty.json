@@ -25872,6 +25872,7 @@
   "shortName": "locachain",
   "chainId": 19180,
   "networkId": 19180,
+  "icon": "locacoin",
   "explorers": [{
     "name": "Locachain Explorer",
     "url": "https://explorer.locachain.io",
@@ -38173,11 +38174,11 @@
   "slip44": 1,
   "explorers": []
 }, {
-  "name": "Funki Sepolia Sandbox",
+  "name": "Funki Sepolia Testnet",
   "chain": "ETH",
   "icon": "funki",
   "rpc": ["https://funki-testnet.alt.technology"],
-  "faucets": [],
+  "faucets": ["https://funkichain.com/portfolio"],
   "nativeCurrency": {
     "name": "Ether",
     "symbol": "ETH",
@@ -38188,6 +38189,10 @@
   "chainId": 3397901,
   "networkId": 3397901,
   "explorers": [{
+    "name": "Funki Sepolia Testnet Explorer",
+    "url": "https://testnet.funkiscan.io",
+    "standard": "none"
+  }, {
     "name": "Funki Sepolia Sandbox Explorer",
     "url": "https://sepolia-sandbox.funkichain.com",
     "standard": "none"
@@ -39773,6 +39778,36 @@
     "url": "https://explorer.toliman.suave.flashbots.net",
     "standard": "EIP3091"
   }]
+}, {
+  "name": "citronus-citro",
+  "title": "Citronus-Citro",
+  "chain": "citronus-citro",
+  "rpc": ["https://rpc.citro-testnet.t.raas.gelato.cloud", "wss://testnet-ws.eh-dev.app"],
+  "nativeCurrency": {
+    "name": "Citronus",
+    "symbol": "CITRO",
+    "decimals": 18
+  },
+  "infoURL": "https://raas.gelato.network/rollups/details/public/citronus-citro",
+  "faucets": [],
+  "shortName": "citronus-citro",
+  "chainId": 34949059,
+  "networkId": 34949059,
+  "slip44": 60,
+  "explorers": [{
+    "name": "blockscout",
+    "url": "https://test.citronus.com",
+    "icon": "blockscout",
+    "standard": "EIP3091"
+  }],
+  "parent": {
+    "type": "L2",
+    "chain": "eip155-11155111",
+    "bridges": [{
+      "url": "https://testnet-bridge.gelato.network/bridge/citronus-citro"
+    }]
+  },
+  "status": "active"
 }, {
   "name": "Joys Digital Mainnet",
   "chain": "JOYS",
